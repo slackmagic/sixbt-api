@@ -7,9 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AppController {
 
+    public static class HealthCheckStatus {
+        public String status;
+
+        HealthCheckStatus(final String status) {
+            this.status = status;
+        }
+    }
+
+
     @GetMapping("/_")
     @ResponseBody
-    public String healtcheck(){
-        return "Everything's fine !";
+    public HealthCheckStatus healthCheck() {
+        return new HealthCheckStatus("Everything's fine !");
     }
 }
