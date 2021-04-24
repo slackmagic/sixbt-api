@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 import ovh.sixbt.business.core.Contact;
 import ovh.sixbt.systems.IContactStorage;
 import ovh.sixbt.systems.contact.MemoryContactStorage;
-
 import java.util.List;
 
 @RestController

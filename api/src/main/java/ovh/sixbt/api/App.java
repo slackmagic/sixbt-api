@@ -2,10 +2,10 @@ package ovh.sixbt.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import ovh.sixbt.business.ISixBtDomain;
-import ovh.sixbt.business.impl.SixBtDomain;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableSwagger2
 public class App {
     public static void main(String[] args) {
         System.out.println("6BT API is Starting...");
