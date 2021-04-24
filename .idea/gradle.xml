@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/api" />
             <option value="$PROJECT_DIR$/business" />
             <option value="$PROJECT_DIR$/business-impl" />
+            <option value="$PROJECT_DIR$/systems" />
+            <option value="$PROJECT_DIR$/systems-impl" />
           </set>
         </option>
       </GradleProjectSettings>

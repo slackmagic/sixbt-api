@@ -1,21 +1,28 @@
 package ovh.sixbt.business.impl;
 
 import ovh.sixbt.business.ISixBtDomain;
+import ovh.sixbt.business.core.Contact;
+import ovh.sixbt.systems.IContactStorage;
 
 import java.util.Collections;
 import java.util.List;
 
 
 public class SixBtDomain implements ISixBtDomain {
-    private final String helixPath;
+    private final IContactStorage contactStorage;
 
-    public SixBtDomain(final String helixPath) {
-        this.helixPath = helixPath;
+    public SixBtDomain(IContactStorage contactStorage) {
+       this.contactStorage = contactStorage;
     }
 
     @Override
-    public List<String> getUsefulAddresses() {
-        return Collections.emptyList();
+    public List<Contact> getPublicContacts() {
+        return contactStorage.getPublicContacts();
+    }
+
+    @Override
+    public List<Contact> getPrivateContacts() {
+        return null;
     }
 
     @Override

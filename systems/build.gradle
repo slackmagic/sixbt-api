@@ -1,5 +1,4 @@
 plugins {
-    id 'org.springframework.boot' version '2.4.3'
     id 'java'
 }
 
@@ -11,10 +10,6 @@ repositories {
 
 dependencies {
     implementation project(":business")
-    implementation project(":business-impl")
-    implementation project(":systems")
-    implementation project(":systems-impl")
-    implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }

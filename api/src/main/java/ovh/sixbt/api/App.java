@@ -9,9 +9,6 @@ import ovh.sixbt.business.impl.SixBtDomain;
 public class App {
     public static void main(String[] args) {
         System.out.println("6BT API is Starting...");
-        ISixBtDomain sixBtDomain = new SixBtDomain("A_PATH");
-        sixBtDomain.getUsefulAddresses();
-
         SpringApplication.run(App.class, args);
     }
 }

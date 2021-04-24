@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="sixbt-api.api.main" />
+        <module name="sixbt-api.business.test" />
+        <module name="sixbt-api.api.test" />
+        <module name="sixbt-api.systems.test" />
+        <module name="sixbt-api.business.main" />
+        <module name="sixbt-api.business-impl.test" />
+        <module name="sixbt-api.systems-impl.test" />
+        <module name="sixbt-api.systems.main" />
+        <module name="sixbt-api.business-impl.main" />
+        <module name="sixbt-api.systems-impl.main" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel target="11" />
   </component>
 </project>
