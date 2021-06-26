@@ -7,9 +7,8 @@ import lombok.Value;
 @Value
 @Builder
 @AllArgsConstructor
-public class Contact {
-    String lastName;
-    String firstName;
-    String phone;
-    EContactCategory category;
+public class Site {
+    String name;
+    ESiteCategory category;
+    String coordinates;
 }

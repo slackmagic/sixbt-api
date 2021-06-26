@@ -11,28 +11,23 @@ import ovh.sixbt.business.core.Contact;
 import java.util.List;
 
 @RestController
-public class AppController {
-    @Value("${spring.application.name}")
-    private String applicationName;
-
+public class ContactController {
     private final IContactService contactService;
 
     @Autowired
-    public AppController(IContactService contactService) {
+    public ContactController(IContactService contactService) {
         this.contactService = contactService;
     }
 
-    public static class HealthCheckStatus {
-        public final String status;
-        HealthCheckStatus(final String status) {
-            this.status = status;
-        }
-    }
-
-    @GetMapping("${api-context-path}/_")
+    @GetMapping("${api-context-path}/contacts/public")
     @ResponseBody
-    public HealthCheckStatus healthCheck() {
-        return new HealthCheckStatus("Everything's fine on " + applicationName);
+    public List<Contact> getPublicContacts() {
+        return contactService.getPublicContacts();
     }
 
+    @GetMapping("${api-context-path}/contacts/private")
+    @ResponseBody
+    public List<Contact> getPrivateContacts() {
+        return contactService.getPrivateContacts();
+    }
 }

@@ -1,6 +1,7 @@
 package ovh.sixbt.systems.contact;
 
 import ovh.sixbt.business.core.Contact;
+import ovh.sixbt.business.core.EContactCategory;
 import ovh.sixbt.systems.IContactStorage;
 
 import java.util.Collections;
@@ -11,8 +12,8 @@ public class MemoryContactStorage implements IContactStorage {
     private final List<Contact> publicContacts;
 
     public MemoryContactStorage() {
-        privateContacts = Collections.singletonList(Contact.builder().firstName("PRIVATE").lastName("Contact").phone("0123456").build());
-        publicContacts = Collections.singletonList(Contact.builder().firstName("PUBLIC").lastName("Contact").phone("0123456").build());
+        privateContacts = Collections.singletonList(Contact.builder().firstName("PRIVATE").lastName("Contact").phone("0123456").category(EContactCategory.PRI).build());
+        publicContacts = Collections.singletonList(Contact.builder().firstName("PUBLIC").lastName("Contact").phone("0123456").category(EContactCategory.PRO).build());
     }
 
     @Override
