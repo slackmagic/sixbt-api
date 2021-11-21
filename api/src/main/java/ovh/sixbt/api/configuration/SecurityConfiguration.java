@@ -16,7 +16,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import ovh.sixbt.api.auth.JwtAuthenticationEntryPoint;
+import ovh.sixbt.api.auth.AuthEntryPoint;
 import ovh.sixbt.api.filter.AuthFilter;
 
 @Configuration
@@ -28,7 +28,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private String apiContextPath;
 
     @Autowired
-    private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
+    private AuthEntryPoint jwtAuthenticationEntryPoint;
 
     @Autowired
     private UserDetailsService jwtUserDetailsService;
