@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation project(":systems-impl")
+    implementation project(":adapters")
     implementation project(":domain")
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'

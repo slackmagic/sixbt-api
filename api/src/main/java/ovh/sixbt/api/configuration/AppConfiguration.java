@@ -3,14 +3,15 @@ package ovh.sixbt.api.configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import ovh.sixbt.adapters.contacts.MemoryContactStorage;
+import ovh.sixbt.adapters.flats.MemoryFlatStorage;
 import ovh.sixbt.domain.ports.in.IContactService;
 import ovh.sixbt.domain.ports.in.IFlatService;
 import ovh.sixbt.domain.ports.out.IContactStorage;
 import ovh.sixbt.domain.ports.out.IFlatStorage;
 import ovh.sixbt.domain.services.ContactService;
 import ovh.sixbt.domain.services.FlatService;
-import ovh.sixbt.systems.contact.MemoryContactStorage;
-import ovh.sixbt.systems.contact.MemoryFlatStorage;
+
 
 @Configuration
 public class AppConfiguration {
@@ -36,6 +37,5 @@ public class AppConfiguration {
     IFlatService flatService(IFlatStorage storage) {
         return new FlatService(storage);
     }
-
 
 }

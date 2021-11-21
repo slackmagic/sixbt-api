@@ -1,5 +1,4 @@
 include 'api'
 include 'domain'
-include 'systems-impl'
-
+include 'adapters'
 
