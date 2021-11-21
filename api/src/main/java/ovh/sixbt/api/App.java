@@ -6,8 +6,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@EnableSwagger2
-@EnableScheduling
+//@EnableScheduling
 public class App {
     public static void main(String[] args) {
         System.out.println("6BT API is Starting...");
