@@ -10,14 +10,13 @@ repositories {
 }
 
 dependencies {
-    implementation project(":business")
-    implementation project(":business-impl")
-    implementation project(":systems")
     implementation project(":systems-impl")
+    implementation project(":domain")
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     compile "io.springfox:springfox-swagger2:2.9.2"
+    compile "io.springfox:springfox-swagger-ui:2.9.2"
 }
 
 test {
