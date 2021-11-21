@@ -1,6 +1,6 @@
 package ovh.sixbt.domain.ports.in;
-import ovh.sixbt.domain.models.ESiteCategory;
-import ovh.sixbt.domain.models.Site;
+import ovh.sixbt.domain.models.sites.ESiteCategory;
+import ovh.sixbt.domain.models.sites.Site;
 
 import java.util.List;
 

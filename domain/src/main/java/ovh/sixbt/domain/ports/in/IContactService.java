@@ -1,7 +1,7 @@
 package ovh.sixbt.domain.ports.in;
 
-import ovh.sixbt.domain.models.Contact;
-import ovh.sixbt.domain.models.EContactCategory;
+import ovh.sixbt.domain.models.contacts.Contact;
+import ovh.sixbt.domain.models.contacts.EContactCategory;
 import java.util.List;
 
 public interface IContactService {

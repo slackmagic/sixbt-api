@@ -1,4 +1,4 @@
-package ovh.sixbt.domain.models;
+package ovh.sixbt.domain.models.contacts;
 
 public enum EContactScope {
     PUBLIC("PUBLIC"),

@@ -1,4 +1,4 @@
-package ovh.sixbt.domain.models;
+package ovh.sixbt.domain.models.sites;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +9,9 @@ import lombok.Value;
 @AllArgsConstructor
 public class Site {
     String name;
+    String url;
+    String openingHours;
+    String phone;
     ESiteCategory category;
-    String coordinates;
+    Coordinates coordinates;
 }

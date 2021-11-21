@@ -1,6 +1,6 @@
 package ovh.sixbt.domain.services;
 
-import ovh.sixbt.domain.models.Flat;
+import ovh.sixbt.domain.models.flats.Flat;
 import ovh.sixbt.domain.ports.in.IFlatService;
 import ovh.sixbt.domain.ports.out.IFlatStorage;
 

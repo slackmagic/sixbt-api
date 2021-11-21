@@ -9,11 +9,13 @@
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
         </processorPath>
         <module name="ovh.sixbt.app.sixbt-api.adapters.main" />
-        <module name="sixbt-api.api.test" />
         <module name="sixbt-api.api.main" />
+        <module name="sixbt-api.domain.main" />
+        <module name="sixbt-api.api.test" />
         <module name="sixbt-api.domain.test" />
         <module name="ovh.sixbt.app.sixbt-api.adapters.test" />
-        <module name="sixbt-api.domain.main" />
+        <module name="sixbt-api.helix-auth.main" />
+        <module name="sixbt-api.helix-auth.test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

@@ -1,6 +1,6 @@
 package ovh.sixbt.domain.ports.in;
 
-import ovh.sixbt.domain.models.Flat;
+import ovh.sixbt.domain.models.flats.Flat;
 
 import java.util.List;
 

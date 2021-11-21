@@ -1,6 +1,6 @@
 package ovh.sixbt.adapters.flats;
 
-import ovh.sixbt.domain.models.Flat;
+import ovh.sixbt.domain.models.flats.Flat;
 import ovh.sixbt.domain.ports.out.IFlatStorage;
 
 import java.util.ArrayList;

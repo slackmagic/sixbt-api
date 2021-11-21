@@ -1,8 +1,8 @@
 package ovh.sixbt.adapters.contacts;
 
-import ovh.sixbt.domain.models.Contact;
-import ovh.sixbt.domain.models.EContactCategory;
-import ovh.sixbt.domain.models.EContactScope;
+import ovh.sixbt.domain.models.contacts.Contact;
+import ovh.sixbt.domain.models.contacts.EContactCategory;
+import ovh.sixbt.domain.models.contacts.EContactScope;
 import ovh.sixbt.domain.ports.out.IContactStorage;
 
 import java.util.ArrayList;

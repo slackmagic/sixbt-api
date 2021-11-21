@@ -7,25 +7,26 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import ovh.sixbt.domain.models.flats.Flat;
-import ovh.sixbt.domain.ports.in.IFlatService;
+import ovh.sixbt.domain.models.sites.Site;
+import ovh.sixbt.domain.ports.in.ISiteService;
+
 import java.util.List;
 
-@Api(description = "Get the flat information.", tags = "Flats")
+@Api(description = "Get the site information.", tags = "Sites")
 @RestController
-public class FlatController {
-    private final IFlatService flatService;
+public class SiteController {
+    private final ISiteService siteService;
 
     @Autowired
-    public FlatController(IFlatService flatService) {
-        this.flatService = flatService;
+    public SiteController(ISiteService siteService) {
+        this.siteService = siteService;
     }
 
     @ApiOperation(value = "Get the flat list.")
-    @GetMapping("${api-context-path}/flats")
+    @GetMapping("${api-context-path}/sites")
     @ResponseBody
-    public ResponseEntity<List<Flat>> getFlats() {
-        List<Flat> flats = flatService.getFlats();
-        return ResponseEntity.ok(flats);
+    public ResponseEntity<List<Site>> getSites() {
+        List<Site> sites = siteService.getSites();
+        return ResponseEntity.ok(sites);
     }
 }

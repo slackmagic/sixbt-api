@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import ovh.sixbt.domain.models.Contact;
+import ovh.sixbt.domain.models.contacts.Contact;
 import ovh.sixbt.domain.ports.in.IContactService;
 
 import java.util.List;
