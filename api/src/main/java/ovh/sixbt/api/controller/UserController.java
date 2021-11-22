@@ -48,12 +48,10 @@ public class UserController {
         return ResponseEntity.ok(new AuthResponse(token));
     }
 
-
     //@RequestMapping(value = "${api-context-path}/users/process", method = RequestMethod.POST)
     public ResponseEntity<?> processToken(@RequestBody AuthRequest authenticationRequest) throws Exception {
         return ResponseEntity.ok(encoder().encode(authenticationRequest.getPassword()));
     }
-
 
     private void authenticate(String username, String password) throws Exception {
         Objects.requireNonNull(username);
@@ -67,8 +65,6 @@ public class UserController {
             throw new Exception("INVALID_CREDENTIALS", e);
         }
     }
-
-
 
 
 }

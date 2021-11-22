@@ -22,7 +22,7 @@ public class SiteController {
         this.siteService = siteService;
     }
 
-    @ApiOperation(value = "Get the flat list.")
+    @ApiOperation(value = "Get the site list.")
     @GetMapping("${api-context-path}/sites")
     @ResponseBody
     public ResponseEntity<List<Site>> getSites() {

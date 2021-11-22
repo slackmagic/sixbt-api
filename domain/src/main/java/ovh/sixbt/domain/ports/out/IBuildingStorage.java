@@ -1,8 +1,8 @@
 package ovh.sixbt.domain.ports.out;
-import ovh.sixbt.domain.models.flats.Flat;
+import ovh.sixbt.domain.models.building.Flat;
 
 import java.util.List;
 
-public interface IFlatStorage {
+public interface IBuildingStorage {
     List<Flat> getFlats();
 }

@@ -4,19 +4,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import ovh.sixbt.adapters.contacts.MemoryContactStorage;
-import ovh.sixbt.adapters.flats.MemoryFlatStorage;
+import ovh.sixbt.adapters.building.MemoryBuildingStorage;
 import ovh.sixbt.adapters.sites.MemorySiteStorage;
 import ovh.sixbt.adapters.users.MemoryUserStorage;
 import ovh.sixbt.domain.ports.in.IContactService;
-import ovh.sixbt.domain.ports.in.IFlatService;
+import ovh.sixbt.domain.ports.in.IBuildingService;
 import ovh.sixbt.domain.ports.in.ISiteService;
 import ovh.sixbt.domain.ports.in.IUserService;
 import ovh.sixbt.domain.ports.out.IContactStorage;
-import ovh.sixbt.domain.ports.out.IFlatStorage;
+import ovh.sixbt.domain.ports.out.IBuildingStorage;
 import ovh.sixbt.domain.ports.out.ISiteStorage;
 import ovh.sixbt.domain.ports.out.IUserStorage;
 import ovh.sixbt.domain.services.ContactService;
-import ovh.sixbt.domain.services.FlatService;
+import ovh.sixbt.domain.services.BuildingService;
 import ovh.sixbt.domain.services.SiteService;
 import ovh.sixbt.domain.services.UserService;
 
@@ -36,14 +36,14 @@ public class AppConfiguration {
     }
 
     @Bean
-    IFlatStorage flatStorage() {
-        return new MemoryFlatStorage();
+    IBuildingStorage flatStorage() {
+        return new MemoryBuildingStorage();
     }
 
     @Bean
     @Autowired
-    IFlatService flatService(IFlatStorage storage) {
-        return new FlatService(storage);
+    IBuildingService flatService(IBuildingStorage storage) {
+        return new BuildingService(storage);
     }
 
     @Bean
