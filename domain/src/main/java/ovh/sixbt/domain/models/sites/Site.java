@@ -3,6 +3,7 @@ package ovh.sixbt.domain.models.sites;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Value;
+import ovh.sixbt.domain.models.Coordinates;
 
 @Value
 @Builder

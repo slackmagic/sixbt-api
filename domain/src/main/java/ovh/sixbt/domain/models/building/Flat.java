@@ -12,4 +12,5 @@ public class Flat {
     String name;
     int area;
     int rent;
+    boolean isAvailable;
 }

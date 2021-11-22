@@ -1,4 +1,4 @@
-package ovh.sixbt.domain.models.sites;
+package ovh.sixbt.domain.models;
 
 import lombok.Data;
 
