@@ -27,6 +27,6 @@ public class BuildingService implements IBuildingService {
 
     @Override
     public NetworkInformation getNetworkInformation() {
-        return null;
+        return buildingStorage.getNetworkInformation();
     }
 }

@@ -1,7 +1,8 @@
 package ovh.sixbt.api.controller;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,7 @@ import ovh.sixbt.domain.ports.in.IContactService;
 
 import java.util.List;
 
-@Api(description = "Get the useful proximity contacts.", tags = "Contacts")
+@Tag(description = "Useful contacts.", name = "Contacts")
 @RestController
 public class ContactController {
     private final IContactService contactService;
@@ -22,7 +23,7 @@ public class ContactController {
         this.contactService = contactService;
     }
 
-    @ApiOperation(value = "Get the public contact list.")
+    @Operation(description = "Get the public contact list.")
     @GetMapping("${api-context-path}/contacts/public")
     @ResponseBody
     public ResponseEntity<List<Contact>> getPublicContacts() {
@@ -30,7 +31,7 @@ public class ContactController {
         return ResponseEntity.ok(publicContacts);
     }
 
-    @ApiOperation(value = "Get the private contact list.")
+    @Operation(description = "Get the private contact list.")
     @GetMapping("${api-context-path}/contacts/private")
     @ResponseBody
     public ResponseEntity<List<Contact>> getPrivateContacts() {

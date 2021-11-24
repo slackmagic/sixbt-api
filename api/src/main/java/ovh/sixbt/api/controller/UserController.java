@@ -1,6 +1,6 @@
 package ovh.sixbt.api.controller;
 
-import io.swagger.annotations.Api;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ import java.util.Objects;
 
 @RestController
 @CrossOrigin
-@Api(description = "User controller", tags = "Users")
+@Tag(description = "User operations.", name = "Users")
 public class UserController {
 
     @Autowired
