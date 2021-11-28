@@ -37,4 +37,12 @@ public class BuildingController {
     public ResponseEntity<NetworkInformation> getNetworkInformation() {
         return ResponseEntity.ok(buildingService.getNetworkInformation());
     }
+
+    @Operation(description = "Get the trash removal planning.")
+    @GetMapping("${api-context-path}/building/information/trash")
+    @ResponseBody
+    public ResponseEntity<String> getTrashPlanningData() {
+        return ResponseEntity.ok("");
+    }
+
 }

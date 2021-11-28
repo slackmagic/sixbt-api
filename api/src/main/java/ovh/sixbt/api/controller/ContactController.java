@@ -23,8 +23,8 @@ public class ContactController {
         this.contactService = contactService;
     }
 
-    @Operation(description = "Get the public contact list.")
-    @GetMapping("${api-context-path}/contacts/public")
+    @Operation(description = "Get the contact list.")
+    @GetMapping("${api-context-path}/contacts")
     @ResponseBody
     public ResponseEntity<List<Contact>> getPublicContacts() {
         List<Contact> publicContacts = contactService.getPublicContacts();
