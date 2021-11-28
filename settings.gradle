@@ -2,10 +2,3 @@ include 'api'
 include 'domain'
 include 'adapters'
 include 'helix-auth'
-
-sourceControl {
-    gitRepository('https://github.com/slackmagic/simple-kv-api.git') {
-        producesModule('ovh.helix:simple-kv-api')
-    }
-}
-

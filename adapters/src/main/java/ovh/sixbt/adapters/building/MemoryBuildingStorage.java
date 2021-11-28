@@ -2,8 +2,8 @@ package ovh.sixbt.adapters.building;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import ovh.helix.simplekv.ISimpleKvApi;
-import ovh.helix.simplekv.adapters.memory.MemoryKvAPI;
+import ovh.helix.untold.simplekv.ISimpleKvApi;
+import ovh.helix.untold.simplekv.adapters.memory.MemoryKvAPI;
 import ovh.sixbt.domain.models.building.Flat;
 import ovh.sixbt.domain.models.building.NetworkInformation;
 import ovh.sixbt.domain.ports.out.IBuildingStorage;
